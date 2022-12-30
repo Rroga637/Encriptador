@@ -1,0 +1,442 @@
+body {
+    background: #FFF4DE;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 100px;
+}
+.logo {
+    width: 13%;
+    position: absolute;
+    top: 3%;
+}
+
+.input-text{
+    display: block;
+    position: absolute;
+    width: 62%;
+    height: 60%;
+    left: 50px;
+    top: 15%;
+    font-family: 'Inter', sans-serif;
+
+    background: #FEFEFE;
+
+
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 39px;
+    border: none;
+    resize: none;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-inline: 30px;
+
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.encriptar {
+    /* Auto layout */
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+
+    width: 25%;
+    height: 7%;
+    position: absolute;
+    top: 85%;
+    left: 10%;
+
+
+    /* ligth orange */
+
+    background: #FFCC66;
+    border-radius: 24px;
+    border: none;
+
+        /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 39px;
+    transition: 0.5s ;
+}
+
+
+
+.encriptar:hover {
+    background: #ffbb33;
+}
+
+.desencriptar {
+    display: flex;
+
+    padding: 24px;
+    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    width: 25%;
+    height: 7%;
+    position: absolute;
+    top: 85%;
+    left: 37%;
+
+    /* ligth orange */
+
+    background: #FFFFFF;
+    border-radius: 24px;
+    border: none;
+
+    /* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 39px;
+    transition: 0.5s;
+}
+
+
+.desencriptar:hover {
+    background: #f9e3ba;
+}
+
+.texto-minuscula {
+
+    position: absolute;
+    top: 75.8%;
+    left: 13%;
+    display: flex-block;
+
+}
+
+.exclamacion{
+    position: absolute;
+    top: 78%;
+    left: 11.3%;
+    display: inline-block;
+}
+
+.resultado {
+    display: inline-block;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+
+    background: #FFFFFF;
+/* shadow */
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding-inline: 20px;
+    position: absolute;
+    width: 23%;
+    height: 90%;
+    left: 70%;
+    top: 40px;
+
+
+}
+
+
+
+.img {
+    padding-top: 60%;
+    width: 250px; 
+}
+
+.na {
+    display: none;
+}
+.pa {
+    display: inline-block;
+    padding: 20px 10px;
+    box-sizing: content-box;
+    text-align: left;
+
+}
+
+.copy {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 24px;
+    border: 1px double rgb(184, 184, 184);
+    color: rgb(184, 184, 184);
+    width: 90%;
+    height: 67px;
+    position: absolute;
+    left: 5%;
+    top: 85%;
+}
+
+
+.copy:active {
+    background: rgb(207, 207, 207);
+}
+
+
+
+
+@media screen and (max-width: 420px) {
+
+    .logo {
+        width: 30%;
+        left: 35%;
+    }
+
+    .input-text {
+        width: 70%;
+        height: 40%;
+        left: 15%;
+    }
+
+    .resultado {
+
+        margin-top: 2em;
+        width: 70%;
+        max-width: 70%;
+        height: auto;
+        position: absolute;
+        left: 15%;
+        top: 90%;
+        justify-items: auto;
+    }
+
+    .pa {
+        width: 80%;
+        max-width: 80%;
+        margin-bottom: 10em;
+    }
+
+    .exclamacion{
+        top:59.5%;
+        left: 12%;
+    }
+
+
+    .texto-minuscula {
+        top: 58%;
+        left: 19%;
+        font-size: 0.7em;
+        
+        margin-top: 10% 0;
+        margin-left: 0.5em;
+
+    }
+
+
+    .encriptar {
+        display: block;
+        width:70%;
+        height: 10%;
+        left: 15%;
+        top: 65%;
+
+    }
+
+    .desencriptar {
+
+        top: 77%;
+        width:70%;
+        height: 10%;
+        left: 15%;
+
+
+    }
+
+    .img{
+        display: none;
+    }
+
+    .na {
+
+        display: inline-block;
+        justify-items: center;
+        width: 80%;
+        position: absolute;
+        top: 15%;
+        left: 10%;
+    }
+
+    .copy{
+        position: absolute;
+        top: 65%;
+        left: 5%;
+        margin-bottom: 1em;
+        border-radius: 32px;
+    }
+    
+    footer {
+        display: inline;
+        width: 20%;
+        position: absolute;
+        top: 125%;
+    }
+}
+
+
+@media screen and (max-height: 420px) {
+    .logo {
+        width: 20%;
+        left: 40%;
+    }
+
+    
+    .input-text {
+        display: flex;
+        top: auto;
+        margin-top: 8em;
+        margin-bottom: 10em;
+        width: 80%;
+        left: 10%;
+        height: 50%;
+
+    }
+
+    .resultado {
+
+        width: 80%;
+        left: 10%;
+        height: auto;
+        top: 122%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .na {
+        display: flex;
+        padding-bottom: 5em;    
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .texto-minuscula {
+        display: flex;
+        position: absolute;
+        font-size: 0.8em;
+        top:85%;
+        left: 18%;
+    }
+
+    .exclamacion{
+        top:88%;
+        left: 15%;
+    }
+
+    .encriptar {
+        top: 100%;
+        width: 30%;
+        left: 19%;
+    }
+
+    .desencriptar {
+        top: 100%;
+        width: 30%;
+        left: 52%;
+    }
+
+    footer {
+        display: inline;
+        width: 20%;
+        position: absolute;
+        top: 220%;
+    }
+    
+
+}
+
+
+@media screen  and (max-width:920px) and (min-height:520px) and (min-width:550px){
+    .logo {
+        width: 20%;
+        left: 40%;
+    }
+
+    .input-text {
+        display: flex;
+        top: auto;
+        margin-top: 10em;
+        margin-bottom: 10em;
+        width: 80%;
+        left: 10%;
+        height: 50%;
+    }
+
+    .resultado {
+        width: 80%;
+        left: 10%;
+        height: auto;
+        top: 85%;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .pa {
+        width: 80%;
+        max-width: 80%;
+        margin-bottom: 10em;
+    }
+    .img {
+        display: none;
+    }
+
+    .na {
+        display: inline-block;
+        padding-bottom: 5em;
+    }
+
+    
+    .copy{
+        position: absolute;
+        top: 65%;
+        left: 25%;
+
+        width: 50%;
+
+        margin-bottom: 1em;
+        border-radius: 32px;
+    }
+
+
+    .texto-minuscula {
+        display: flex;
+        position: absolute;
+        font-size: 1.2em;
+        top:65%;
+        left: 15%;
+    }
+
+    .exclamacion{
+        top:67%;
+        left: 12%;
+    }
+
+    .encriptar {
+        width: 40%;
+        top: 72%;
+    }
+
+    .desencriptar {
+        width: 40%;
+        left: 52%;
+        top: 72%;
+    }
+
+
+
+    footer {
+        display: inline;
+        width: 20%;
+        position: absolute;
+        top: 135%;
+    }
+    
+}
