@@ -178,6 +178,21 @@ body {
     background: rgb(207, 207, 207);
 }
 
+footer {
+    display: block;
+    position: absolute;
+    text-align: center;
+    background: url(img/bg.jpg);
+    top: 100%;
+    left: 0;
+
+    font-weight: bold;
+    color: #FEFEFE;
+
+    width: 96.8%;
+    padding: 20px;
+}
+
 
 
 
@@ -272,9 +287,9 @@ body {
     
     footer {
         display: inline;
-        width: 20%;
+        width: 96.8%;
         position: absolute;
-        top: 125%;
+        top: 135%;
     }
 }
 
@@ -346,9 +361,9 @@ body {
 
     footer {
         display: inline;
-        width: 20%;
+        width: 96.8%;
         position: absolute;
-        top: 220%;
+        top: 225%;
     }
     
 
@@ -434,7 +449,7 @@ body {
 
     footer {
         display: inline;
-        width: 20%;
+        width: 96.8%;
         position: absolute;
         top: 135%;
     }
